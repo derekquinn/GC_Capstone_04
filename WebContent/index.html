@@ -3,53 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <title>Beer | Queen's Bar Order Ahead</title>
-<link rel="stylesheet" href="style.css" >
+<link rel="stylesheet" href="style.css">
 </head>
 <body onload="generateList()">
-	<h3>QUEENS BAR BEER LIST</h3>
+	<h2>QUEEN'S BAR BEER LIST</h2>
 	<br>
-<div id ="menu">
+	<div id="menu">
 
 
-	<table style="width: 55%">
-		<tr id="listplace">
-			<th>BEER</th>
-			<th>BREWERY</th>
-			<th>PRICE</th>
-		</tr>
-	</table>
-</div>
-<br>
-<br>
-
-<div id ="buttons">
-	
-<h4><i>CLICK A BEER TO ADD IT TO YOUR CART, CHEERS!</i></h4>
-
-	<button onclick="addItem('Fresh Squeezed','Deschutes', 8.25)">Fresh Squeezed</button>
-	<button onclick="addItem('Two Hearted','Bells', 8.25)">Two Hearted</button>
-	<button onclick="addItem('Commodore Perry','Great Lakes', 8.25)">Commodore Perry</button>
-	<button onclick="addItem('Stone IPA','Stone', 8.25)">Stone IPA</button>
-	<button onclick="addItem('Kuhnhenn','Crème Brûlée', 10.25)">Crème Brûlée</button>
-	<button onclick="addItem('Bud Light','Lime-a-rita', 3.25)">Lime-a-rita</button>
+		<table style="width: 55%">
+			<tr id="listplace">
+				<th>BEER</th>
+				<th>BREWERY</th>
+				<th>PRICE</th>
+			</tr>
+		</table>
+	</div>
 	<br>
 	<br>
-</div>
+
+	<div id="buttons">
+
+		<h4>
+			<i>CLICK A BEER TO ADD IT TO YOUR CART, CHEERS!</i>
+		</h4>
+
+		<button onclick="addItem('Fresh Squeezed','Deschutes', 8.25)">Fresh
+			Squeezed</button>
+		<button onclick="addItem('Two Hearted','Bells', 8.25)">Two
+			Hearted</button>
+		<button onclick="addItem('Commodore Perry','Great Lakes', 8.25)">Commodore
+			Perry</button>
+		<button onclick="addItem('Stone IPA','Stone', 8.25)">Stone
+			IPA</button>
+		<button onclick="addItem('Kuhnhenn','Crème Brûlée', 10.25)">Crème
+			Brûlée</button>
+		<button onclick="addItem('Bud Light','Lime-a-rita', 3.25)">Lime-a-rita</button>
+		<br> <br>
+	</div>
 
 
 	<h3>SHOPPING CART</h3>
-	
-	<div id="cart">
-	<table style="width: 55%">
-		<tr id="cartplace">
-			<th>BEER</th>
-			<th>BREWERY</th>
-			<th>PRICE</th>
-		</tr>
+
+	<div id="cartp">
+		<table style="width: 55%">
+			<tr id="cartplace">
+				<th>BEER</th>
+				<th>BREWERY</th>
+				<th>PRICE</th>
+			</tr>
 
 
 
-	</table>
+		</table>
 	</div>
 	<br>
 
@@ -62,7 +68,8 @@
 	<br>
 	<br>
 
-	<div class="table">
+	<div id="totals">
+
 		<table>
 			<tr>
 				<td class="cart">Sub Total</td>
@@ -75,6 +82,7 @@
 				<td class="cart">Your Total</td>
 				<td id="cartTotal"></td>
 		</table>
+
 	</div>
 
 	<script src=script.js></script>
@@ -82,50 +90,3 @@
 
 
 </html>
-<!-- old table
-<table style="width: 55%">
-		<tr>
-			<th>BREWERY</th>
-			<th>BEER</th>
-			<th>PRICE</th>
-			<th>ADD</th>
-
-		</tr>
-		<tr>
-			<td>Bells</td>
-			<td><i>Two Hearted</i></td>
-			<td>$8.75</td>
-
-		</tr>
-		<tr>
-			<td>Deschutes</td>
-			<td><i>Fresh Squeezed</i></td>
-			<td>$7.99</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Great Lakes</td>
-			<td><i>Commodore Perry</i></td>
-			<td>$6.99</td>
-
-		<tr>
-			<td>Stone</td>
-			<td><i>Stone IPA</i></td>
-			<td>$6.99</td>
-			<td></td>
-		</tr>
-
-		<tr>
-			<td>Kuhnhenn</td>
-			<td><i>Imperial Crème Brûlée</i></td>
-			<td>$8.25</td>
-			<td></td>
-		</tr>
-
-		<tr>
-			<td>Bud Light</td>
-			<td><i>Lime-a-rita</i></td>
-			<td>$3.12</td>
-			<td></td>
-		</tr>
-	</table> -->

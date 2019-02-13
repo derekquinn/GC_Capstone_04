@@ -1,30 +1,48 @@
 @charset "UTF-8";
 
-h3 {
+h2 {
 	color: firebrick;
 	text-align: center;
 }
+
 #menu {
-	
 	background: #E4ECE3;
+	border: 1px solid black;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
 }
 
 table {
-	
 	text-align: left;
 }
 
-#cart{
-	
+#cartp {
 	background: #FAFBD2;
+	border: 1px solid black;
 }
 
-#buttons {
-  background-color: #CFFEDC; /* Green */
-  border: none;
-  color: red;
-  padding: 1px 1px;
-  text-align: center;
-  font-size: 19px;
-  border: 3px solid #73AD21
+#buttons {background-color azure; /* Green */
+	border: 1px solid black;
+	color: red;
+	padding: 1px 1px;
+	text-align: center;
+	font-size: 19px;
+	border: 3px solid #73AD21
+}
+
+th {
+	padding: 5px;
+	text-align: center;
+	font-size: 19px;
+}
+
+#totals {
+	text-align: center;
+	border: 1px solid black;
+	width: 50%;
+	font-size: 19px;
+	padding: 5px;
+	background: gainsboro;
+	width: 50%;
 }
