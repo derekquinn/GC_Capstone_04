@@ -12,19 +12,30 @@ var priceCart = [];
 
 // function(s) for adding items to cart array when clicked
 function addItem(beer, brewery, cost) {
-	
+
 	beerCart.push(beer);
 	breweryCart.push(brewery);
-	priceCart.push(price);
+	priceCart.push(cost);
+	var cartEl = document.getElementById("cartplace");
+	cartEl.insertAdjacentHTML("afterend", "<tr><td>" + beer + "</td><td>"
+			+ brewery + "</td><td>" + cost + "</td></tr>");
 
 }
 
-
-
-
-
+function calcTotals(){
+	var grandTotal = 0;
+	for (i = 0; i < priceCart.length; i++){
+		grandTotal = grandTotal + priceCart[i]; 
+	}
+	var totalEl = document.getElementById("cart");
+	totalEl.textContent = ("$"+Number(grandTotal).toFixed(2));
+	var taxesEl = document.getElementById("cartTax");
+	taxesEl.textContent = ("$"+Number(grandTotal*0.06).toFixed(2));
+	var grandTotalEl = document.getElementById("cartTotal");
+	grandTotalEl.textContent = ("$"+Number(grandTotal*1.06).toFixed(2));
+}
 // REMOVE ME DEBUG
 
-//console.log(beerCart);
-//console.log(breweries);
-//console.log(prices);
+// console.log(beerCart);
+// console.log(breweries);
+// console.log(prices);

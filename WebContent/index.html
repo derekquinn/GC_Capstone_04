@@ -5,7 +5,7 @@
 <title>Beer | Brass Rail Online Ordering</title>
 </head>
 <body>
-<h3>BRASS RAIL BEER MENU - UPDATED DECEMBER 2006</h3>
+	<h3>BRASS RAIL BEER MENU - UPDATED DECEMBER 2006</h3>
 	<table style="width: 55%">
 		<tr>
 			<th>BREWERY</th>
@@ -17,53 +17,80 @@
 		<tr>
 			<td>Bells</td>
 			<td><i>Two Hearted</i></td>
-			<td>$8.00</td>
-			<td><button onclick="addItem('Two Hearted','Bells', 8.00)">ADD</button></td>
+			<td>$8.75</td>
+			<td><button onclick="addItem('Two Hearted','Bells', 8.75)">ADD</button></td>
 		</tr>
 		<tr>
 			<td>Deschutes</td>
 			<td><i>Fresh Squeezed</i></td>
-			<td>$7.50</td>
-			<td><button>ADD</button></td>
+			<td>$7.99</td>
+			<td><button
+					onclick="addItem('Fresh Squeezed','Deschutes', 7.99)">ADD</button></td>
 		</tr>
 		<tr>
 			<td>Great Lakes</td>
 			<td><i>Commodore Perry</i></td>
-			<td>$6.50</td>
-			<td><button>ADD</button></td>
+			<td>$6.99</td>
+			<td><button
+					onclick="addItem('Commodore Perry','Great Lakes', 6.99)">ADD</button></td>
 		<tr>
 			<td>Stone</td>
 			<td><i>Stone IPA</i></td>
-			<td>$6.20</td>
-			<td><button>ADD</button></td>
+			<td>$6.99</td>
+			<td><button onclick="addItem('Stone IPA','Stone', 6.99)">ADD</button></td>
 		</tr>
 
 		<tr>
 			<td>Kuhnhenn</td>
 			<td><i>Imperial Crème Brûlée</i></td>
-			<td>$8.50</td>
-			<td><button>ADD</button></td>
+			<td>$8.25</td>
+			<td><button onclick="addItem('Kuhnhenn','Crème Brûlée', 8.25)">ADD</button></td>
 		</tr>
 
 		<tr>
 			<td>Bud Light</td>
 			<td><i>Lime-a-rita</i></td>
-			<td>$3.00</td>
-			<td><button>ADD</button></td>
+			<td>$3.12</td>
+			<td><button onclick="addItem('Bud Light','Lime-a-rita', 3.12)">ADD</button></td>
 		</tr>
 	</table>
-	
+
 	<br>
 	<h3>SHOPPING CART</h3>
-	<table style ="width: 55%"> 
-	<tr>
-	<th>BEER</th>
-	<th>BREWERY</th>
-	<th>PRICE</th>
-	
-	
-	
+	<table style="width: 55%">
+		<tr id="cartplace">
+			<th>BEER</th>
+			<th>BREWERY</th>
+			<th>PRICE</th>
+		</tr>
+
+
+
 	</table>
+	<br>
+	<br>
+
+
+	<button onclick="calcTotals()">CHECK OUT</button>
+
+	<br>
+	<br>
+
+	<div class="table">
+		<table>
+			<tr>
+				<td class="cart">Sub Total</td>
+				<td id="cart"></td>
+			</tr>
+			<tr>
+				<td class="cart">MI tax @ 6%</td>
+				<td id="cartTax"></td>
+			<tr>
+				<td class="cart">Grand Total</td>
+				<td id="cartTotal"></td>
+		</table>
+	</div>
+
 	<script src=script.js></script>
 </body>
 </html>
