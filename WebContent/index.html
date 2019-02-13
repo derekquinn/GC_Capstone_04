@@ -2,11 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Beer | Brass Rail Online Ordering</title>
+<title>Beer | Queen's Bar Order Ahead</title>
+<link rel="stylesheet" href="style.css" >
 </head>
 <body onload="generateList()">
-	<h3>BRASS RAIL BEER MENU - UPDATED DECEMBER 2006</h3>
+	<h3>QUEENS BAR BEER LIST</h3>
 	<br>
+<div id ="menu">
 
 
 	<table style="width: 55%">
@@ -16,8 +18,13 @@
 			<th>PRICE</th>
 		</tr>
 	</table>
+</div>
+<br>
+<br>
+
+<div id ="buttons">
 	
-	<h4>CLICK A BEER TO ADD IT TO YOUR CART! CHEERS!</h4>
+<h4><i>CLICK A BEER TO ADD IT TO YOUR CART, CHEERS!</i></h4>
 
 	<button onclick="addItem('Fresh Squeezed','Deschutes', 8.25)">Fresh Squeezed</button>
 	<button onclick="addItem('Two Hearted','Bells', 8.25)">Two Hearted</button>
@@ -25,10 +32,14 @@
 	<button onclick="addItem('Stone IPA','Stone', 8.25)">Stone IPA</button>
 	<button onclick="addItem('Kuhnhenn','Crème Brûlée', 10.25)">Crème Brûlée</button>
 	<button onclick="addItem('Bud Light','Lime-a-rita', 3.25)">Lime-a-rita</button>
-
-
 	<br>
+	<br>
+</div>
+
+
 	<h3>SHOPPING CART</h3>
+	
+	<div id="cart">
 	<table style="width: 55%">
 		<tr id="cartplace">
 			<th>BEER</th>
@@ -39,6 +50,7 @@
 
 
 	</table>
+	</div>
 	<br>
 
 

@@ -1,1 +1,30 @@
 @charset "UTF-8";
+
+h3 {
+	color: firebrick;
+	text-align: center;
+}
+#menu {
+	
+	background: #E4ECE3;
+}
+
+table {
+	
+	text-align: left;
+}
+
+#cart{
+	
+	background: #FAFBD2;
+}
+
+#buttons {
+  background-color: #CFFEDC; /* Green */
+  border: none;
+  color: red;
+  padding: 1px 1px;
+  text-align: center;
+  font-size: 19px;
+  border: 3px solid #73AD21
+}
