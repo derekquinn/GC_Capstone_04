@@ -41,7 +41,9 @@ function generateList() {
 
 		var listEl = document.getElementById("listplace");
 		listEl.insertAdjacentHTML("afterend", "<tr><td>" + beers[i] + "</td><td>"
-				+ breweries[i] + "</td><td>" + "$" + prices[i] + "</td></tr>");
+				+ breweries[i] + "</td><td>" + "$" + prices[i] + "</td></tr>" + "") 			
+				
+				//<td><button onclick="addItem('Two Hearted','Bells', 8.75)">ADD</button></td>;
 
 	}
 }

@@ -4,56 +4,28 @@
 <meta charset="UTF-8">
 <title>Beer | Brass Rail Online Ordering</title>
 </head>
-<body>
+<body onload="generateList()">
 	<h3>BRASS RAIL BEER MENU - UPDATED DECEMBER 2006</h3>
+	<br>
+
+
 	<table style="width: 55%">
-		<tr>
-			<th>BREWERY</th>
+		<tr id="listplace">
 			<th>BEER</th>
+			<th>BREWERY</th>
 			<th>PRICE</th>
-			<th>ADD</th>
-
-		</tr>
-		<tr>
-			<td>Bells</td>
-			<td><i>Two Hearted</i></td>
-			<td>$8.75</td>
-			<td><button onclick="addItem('Two Hearted','Bells', 8.75)">ADD</button></td>
-		</tr>
-		<tr>
-			<td>Deschutes</td>
-			<td><i>Fresh Squeezed</i></td>
-			<td>$7.99</td>
-			<td><button
-					onclick="addItem('Fresh Squeezed','Deschutes', 7.99)">ADD</button></td>
-		</tr>
-		<tr>
-			<td>Great Lakes</td>
-			<td><i>Commodore Perry</i></td>
-			<td>$6.99</td>
-			<td><button
-					onclick="addItem('Commodore Perry','Great Lakes', 6.99)">ADD</button></td>
-		<tr>
-			<td>Stone</td>
-			<td><i>Stone IPA</i></td>
-			<td>$6.99</td>
-			<td><button onclick="addItem('Stone IPA','Stone', 6.99)">ADD</button></td>
-		</tr>
-
-		<tr>
-			<td>Kuhnhenn</td>
-			<td><i>Imperial Crème Brûlée</i></td>
-			<td>$8.25</td>
-			<td><button onclick="addItem('Kuhnhenn','Crème Brûlée', 8.25)">ADD</button></td>
-		</tr>
-
-		<tr>
-			<td>Bud Light</td>
-			<td><i>Lime-a-rita</i></td>
-			<td>$3.12</td>
-			<td><button onclick="addItem('Bud Light','Lime-a-rita', 3.12)">ADD</button></td>
 		</tr>
 	</table>
+	
+	<h4>CLICK A BEER TO ADD IT TO YOUR CART! CHEERS!</h4>
+
+	<button onclick="addItem('Fresh Squeezed','Deschutes', 7.99)">Fresh Squeezed</button>
+	<button onclick="addItem('Two Hearted','Bells', 7.99)">Two Hearted</button>
+	<button onclick="addItem('Commodore Perry','Great Lakes', 6.99)">Commodore Perry</button>
+	<button onclick="addItem('Stone IPA','Stone', 6.99)">Stone IPA</button>
+	<button onclick="addItem('Kuhnhenn','Crème Brûlée', 8.25)">Crème Brûlée</button>
+	<button onclick="addItem('Bud Light','Lime-a-rita', 3.12)">Lime-a-rita</button>
+
 
 	<br>
 	<h3>SHOPPING CART</h3>
@@ -68,18 +40,8 @@
 
 	</table>
 	<br>
-	
-		<button onclick="generateList()">TEST generate list</button>
-	
-		<h3>TEST LIST </h3>
-	<table style="width: 55%">
-		<tr id="listplace">
-			<th>BEER</th>
-			<th>BREWERY</th>
-			<th>PRICE</th>
-		</tr>
-		
-		</table>
+
+
 	<br>
 
 
@@ -105,4 +67,53 @@
 
 	<script src=script.js></script>
 </body>
+
+
 </html>
+<!-- old table
+<table style="width: 55%">
+		<tr>
+			<th>BREWERY</th>
+			<th>BEER</th>
+			<th>PRICE</th>
+			<th>ADD</th>
+
+		</tr>
+		<tr>
+			<td>Bells</td>
+			<td><i>Two Hearted</i></td>
+			<td>$8.75</td>
+
+		</tr>
+		<tr>
+			<td>Deschutes</td>
+			<td><i>Fresh Squeezed</i></td>
+			<td>$7.99</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Great Lakes</td>
+			<td><i>Commodore Perry</i></td>
+			<td>$6.99</td>
+
+		<tr>
+			<td>Stone</td>
+			<td><i>Stone IPA</i></td>
+			<td>$6.99</td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td>Kuhnhenn</td>
+			<td><i>Imperial Crème Brûlée</i></td>
+			<td>$8.25</td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td>Bud Light</td>
+			<td><i>Lime-a-rita</i></td>
+			<td>$3.12</td>
+			<td></td>
+		</tr>
+	</table> -->
