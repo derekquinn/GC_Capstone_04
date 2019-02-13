@@ -3,7 +3,7 @@ var beers = [ "Two Hearted", "Fresh Squeezed", "Commodore Perry", "Stone IPA",
 		"Imperial Crème Brûlée", "Lime-a-rita" ];
 var breweries = [ "Bell's", "Deschutes", "Great Lakes", "Stone", "Kuhnhenn",
 		"Bud Light" ];
-var prices = [ 8.00, 7.50, 6.50, 6.20, 8.50, 3.00 ];
+var prices = [ 8.25, 8.25, 8.25, 8.25, 10.25, 3.25 ];
 
 // empty parallel arrays for shopping cart data
 var beerCart = [];
@@ -43,7 +43,7 @@ function generateList() {
 		listEl.insertAdjacentHTML("afterend", "<tr><td>" + beers[i] + "</td><td>"
 				+ breweries[i] + "</td><td>" + "$" + prices[i] + "</td></tr>" + "") 			
 				
-				//<td><button onclick="addItem('Two Hearted','Bells', 8.75)">ADD</button></td>;
+		
 
 	}
 }
