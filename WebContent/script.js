@@ -18,21 +18,33 @@ function addItem(beer, brewery, cost) {
 	priceCart.push(cost);
 	var cartEl = document.getElementById("cartplace");
 	cartEl.insertAdjacentHTML("afterend", "<tr><td>" + beer + "</td><td>"
-			+ brewery + "</td><td>" + cost + "</td></tr>");
+			+ brewery + "</td><td>" +"$"+ cost + "</td></tr>");
 
 }
 
-function calcTotals(){
+function calcTotals() {
 	var grandTotal = 0;
-	for (i = 0; i < priceCart.length; i++){
-		grandTotal = grandTotal + priceCart[i]; 
+	for (i = 0; i < priceCart.length; i++) {
+		grandTotal = grandTotal + priceCart[i];
 	}
 	var totalEl = document.getElementById("cart");
-	totalEl.textContent = ("$"+Number(grandTotal).toFixed(2));
+	totalEl.textContent = ("$" + Number(grandTotal).toFixed(2));
 	var taxesEl = document.getElementById("cartTax");
-	taxesEl.textContent = ("$"+Number(grandTotal*0.06).toFixed(2));
+	taxesEl.textContent = ("$" + Number(grandTotal * 0.06).toFixed(2));
 	var grandTotalEl = document.getElementById("cartTotal");
-	grandTotalEl.textContent = ("$"+Number(grandTotal*1.06).toFixed(2));
+	grandTotalEl.textContent = ("$" + Number(grandTotal * 1.06).toFixed(2));
+
+}
+
+function generateList() {
+	for (i = 0; beers.length; i++) {
+		
+		var listEl 
+	
+		
+		
+
+	}
 }
 // REMOVE ME DEBUG
 
