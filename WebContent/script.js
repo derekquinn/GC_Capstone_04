@@ -18,7 +18,7 @@ function addItem(beer, brewery, cost) {
 	priceCart.push(cost);
 	var cartEl = document.getElementById("cartplace");
 	cartEl.insertAdjacentHTML("afterend", "<tr><td>" + beer + "</td><td>"
-			+ brewery + "</td><td>" +"$"+ cost + "</td></tr>");
+			+ brewery + "</td><td>" + "$" + cost + "</td></tr>");
 
 }
 
@@ -37,12 +37,11 @@ function calcTotals() {
 }
 
 function generateList() {
-	for (i = 0; beers.length; i++) {
-		
-		var listEl 
-	
-		
-		
+	for (i = 0; i<breweries.length; i++) {
+
+		var listEl = document.getElementById("listplace");
+		listEl.insertAdjacentHTML("afterend", "<tr><td>" + beers[i] + "</td><td>"
+				+ breweries[i] + "</td><td>" + "$" + prices[i] + "</td></tr>");
 
 	}
 }
