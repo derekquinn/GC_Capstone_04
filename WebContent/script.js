@@ -5,12 +5,26 @@ var breweries = [ "Bell's", "Deschutes", "Great Lakes", "Stone", "Kuhnhenn",
 		"Bud Light" ];
 var prices = [ 8.00, 7.50, 6.50, 6.20, 8.50, 3.00 ];
 
-// adding items to cart array when clicked
+// empty parallel arrays for shopping cart data
+var beerCart = [];
+var breweryCart = [];
+var priceCart = [];
+
+// function(s) for adding items to cart array when clicked
+function addItem(beer, brewery, cost) {
+	
+	beerCart.push(beer);
+	breweryCart.push(brewery);
+	priceCart.push(price);
+
+}
+
+
+
 
 
 // REMOVE ME DEBUG
 
-
-console.log(beers);
-console.log(breweries);
-console.log(prices);
+//console.log(beerCart);
+//console.log(breweries);
+//console.log(prices);

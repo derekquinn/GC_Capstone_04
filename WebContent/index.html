@@ -5,41 +5,36 @@
 <title>Beer | Brass Rail Online Ordering</title>
 </head>
 <body>
+<h3>BRASS RAIL BEER MENU - UPDATED DECEMBER 2006</h3>
 	<table style="width: 55%">
 		<tr>
 			<th>BREWERY</th>
 			<th>BEER</th>
 			<th>PRICE</th>
-			<th>QUANTITY</th>
 			<th>ADD</th>
 
 		</tr>
 		<tr>
-			<td>Bell's</td>
+			<td>Bells</td>
 			<td><i>Two Hearted</i></td>
 			<td>$8.00</td>
-
-			<td><input type="number" id="th-qty" value="0" /></td>
-			<td><button onclick="">ADD</button></td>
+			<td><button onclick="addItem('Two Hearted','Bells', 8.00)">ADD</button></td>
 		</tr>
 		<tr>
 			<td>Deschutes</td>
 			<td><i>Fresh Squeezed</i></td>
 			<td>$7.50</td>
-			<td><input type="number" id="fs-qty" value="0" /></td>
 			<td><button>ADD</button></td>
 		</tr>
 		<tr>
 			<td>Great Lakes</td>
 			<td><i>Commodore Perry</i></td>
 			<td>$6.50</td>
-			<td><input type="number" id="gl-qty" value="0" /></td>
 			<td><button>ADD</button></td>
 		<tr>
 			<td>Stone</td>
 			<td><i>Stone IPA</i></td>
 			<td>$6.20</td>
-			<td><input type="number" id="si-qty" value="0" /></td>
 			<td><button>ADD</button></td>
 		</tr>
 
@@ -47,7 +42,6 @@
 			<td>Kuhnhenn</td>
 			<td><i>Imperial Crème Brûlée</i></td>
 			<td>$8.50</td>
-			<td><input type="number" id="ic-qty" value="0" /></td>
 			<td><button>ADD</button></td>
 		</tr>
 
@@ -55,14 +49,21 @@
 			<td>Bud Light</td>
 			<td><i>Lime-a-rita</i></td>
 			<td>$3.00</td>
-			<td><input type="number" id="li-qty" value="0" /></td>
 			<td><button>ADD</button></td>
 		</tr>
-
-
-
-
 	</table>
-<script src=script.js></script>
+	
+	<br>
+	<h3>SHOPPING CART</h3>
+	<table style ="width: 55%"> 
+	<tr>
+	<th>BEER</th>
+	<th>BREWERY</th>
+	<th>PRICE</th>
+	
+	
+	
+	</table>
+	<script src=script.js></script>
 </body>
 </html>
